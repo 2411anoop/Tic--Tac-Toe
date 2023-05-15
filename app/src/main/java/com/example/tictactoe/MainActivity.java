@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
             if (player == 1){
             v.setImageResource(R.drawable.cross);
             gameState[tag] = player;
-//            Toast.makeText(this, tag+""+"cross", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, tag+""+"cross", Toast.LENGTH_SHORT).show();
             player = 2;
         }else{
             v.setImageResource(R.drawable.zero);
             gameState[tag] = player;
-//            Toast.makeText(this, tag+""+"zero", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, tag+""+"zero", Toast.LENGTH_SHORT).show();
             player = 1;
         }
             for (int[] ints : winningState) {
